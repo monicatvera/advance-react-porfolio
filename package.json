@@ -1,4 +1,5 @@
 {
+  "homepage":"https://monicatvera.github.io/advance-react-porfolio",
   "name": "graded-assessment",
   "version": "0.1.0",
   "private": true,
@@ -26,7 +27,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
@@ -41,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "prettier": "^2.7.1"
   }
 }
